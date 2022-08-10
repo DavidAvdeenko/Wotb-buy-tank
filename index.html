@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tank Card</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div class="card">
+      <div class="circle" style="--clr: #27304d">
+         <img class="logo" src="./img/NicePng_world-of-tanks-png_3021294.png" alt="">
+      </div>
+      <div class="content">
+         <h2>Super Conqueror</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Facilis quasi minima sapiente aliquid cupiditate
+            reprehenderit dolores quod nihil magni deserunt.</p>
+         <a href="#" onclick="buySuperConqueror();">Buy Now</a>
+      </div>
+      <img src="./img/GB91_Super_Conqueror_preview.png" alt="" class="poduct_img">
+   </div>
+
+   <div class="card">
+      <div class="circle" style="--clr: #27304d">
+         <img class="logo" src="./img/NicePng_world-of-tanks-png_3021294.png" alt="">
+      </div>
+      <div class="content">
+         <h2>AMX M4 Mle. 54</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Facilis quasi minima sapiente aliquid cupiditate
+            reprehenderit dolores quod nihil magni deserunt.</p>
+         <a href="#" onclick="buyAmxM4Mle54();">Buy Now</a>
+      </div>
+      <img src="./img/F82_AMX_M4_Mle1949_Ter_preview.png" alt="" class="poduct_img">
+   </div>
+
+   <div class="card">
+      <div class="circle" style="--clr: #27304d">
+         <img class="logo" src="./img/NicePng_world-of-tanks-png_3021294.png" alt="">
+      </div>
+      <div class="content">
+         <h2>Object 907</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Facilis quasi minima sapiente aliquid cupiditate
+            reprehenderit dolores quod nihil magni deserunt.</p>
+         <a href="#" onclick="buyObj907();">Buy Now</a>
+      </div>
+      <img src="./img/R95_Object_907_preview.png" alt="" class="poduct_img">
+   </div>
+
+
+   <script>
+      function buySuperConqueror() {
+         let confirmAnswer = confirm('The price of the "Super Conqueror" tier X British Heavy tank is 40$\nAre you sure that you want to buy it?');
+         if (confirmAnswer) {
+            let email = prompt('To confirm purchase enter the name of the tank you want to buy.');
+            if (email === 'Super Conqueror') {
+               alert('Congratulations! You purchased tier X British Heavy tank "Super Conqueror" for 40$.\nHave a nice game!');
+            }
+            if (email !== 'Super Conqueror') {
+               alert('You entered a wrong name of the tank\nEnter "Super Conqueror"');
+            }
+            if (!email) {
+               alert('Oops! You canceled the purchase');
+            }
+         }
+         if (!confirmAnswer) {
+            alert('Oops! You canceled the purchase');
+         }
+      }
+
+      function buyAmxM4Mle54() {
+         let confirmAnswer = confirm('The price of the "AMX M4 Mle. 54" tier X French Heavy tank is 30$\nAre you sure that you want to buy it?');
+         if (confirmAnswer) {
+            let email = prompt('To confirm purchase enter the name of the tank you want to buy.');
+            if (email === 'AMX M4 Mle. 54') {
+               alert('Congratulations! You purchased tier X French Heavy tank "AMX M4 Mle. 54" for 30$.\nHave a nice game!');
+            }
+            if (email !== 'AMX M4 Mle. 54') {
+               alert('You entered a wrong name of the tank\nEnter "AMX M4 Mle. 54"');
+            }
+            if (!email) {
+               alert('Oops! You canceled the purchase');
+            }
+         }
+         if (!confirmAnswer) {
+            alert('Oops! You canceled the purchase');
+         }
+      }
+
+      function buyObj907() {
+         let confirmAnswer = confirm('The price of the "Object 907" tier X USSR Medium tank is 30$\nAre you sure that you want to buy it?');
+         if (confirmAnswer) {
+            let email = prompt('To confirm purchase enter the name of the tank you want to buy.');
+            if (email === 'Object 907') {
+               alert('Congratulations! You purchased tier X USSR Medium tank "Object 907" for 30$.\nHave a nice game!');
+            }
+            if (email !== 'Object 907') {
+               alert('You entered a wrong name of the tank\nEnter "Object 907"');
+            }
+            if (!email) {
+               alert('Oops! You canceled the purchase');
+            }
+         }
+         if (!confirmAnswer) {
+            alert('Oops! You canceled the purchase');
+         }
+      }
+   </script>
+</body>
+
+</html>
